@@ -41,7 +41,7 @@ This project aims to predict diabetes in patients using machine learning techniq
  Future work
 
 ## Deployment
- Streamlit app: Coming soon
+ Streamlit app: https://jpdiabeticprediction.streamlit.app/
 
 ## Installation
 1. Clone the repository
