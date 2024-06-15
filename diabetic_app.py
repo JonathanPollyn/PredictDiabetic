@@ -33,19 +33,18 @@ The dataset contains the following features:
 - **Age**: Age in years.
 - **Outcome**: Binary classification indicating the presence (1) or absence (0) of diabetes.
 
-You can access the dataset [here](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes).
 """)
 
 
 # Collect user input
 st.sidebar.header('User Input Parameters')
 pregnancies = st.sidebar.number_input('Pregnancies', min_value=0, max_value=100, value=0, step=1, format='%d')
-glucose = st.sidebar.number_input('Glucose', min_value=0.0, max_value=100.0, value=0.0)
-bloodpressure = st.sidebar.number_input('Blood Pressure', min_value=0.0, max_value=100.0, value=25.0)
-skinthickness = st.sidebar.number_input('SkinThickness', min_value=0.0, max_value=100.0, value=25.0)
-insulin = st.sidebar.number_input('Insulin', min_value=0.0, max_value=100.0, value=25.0)
-bmi = st.sidebar.number_input('BMI', min_value=0.0, max_value=100.0, value=25.0)
-diabetespedigreefunction = st.sidebar.number_input('Diabetes Pedigree Function', min_value=0.0, max_value=100.0, value=25.0)
+glucose = st.sidebar.number_input('Glucose Level (mg/dL)', min_value=0.0, max_value=1000.0, value=0.0)
+bloodpressure = st.sidebar.number_input('Blood Pressure', min_value=0.0, max_value=1000.0, value=0.0)
+skinthickness = st.sidebar.number_input('SkinThickness', min_value=0.0, max_value=1000.0, value=0.0)
+insulin = st.sidebar.number_input('Insulin', min_value=0.0, max_value=1000.0, value=0.0)
+bmi = st.sidebar.number_input('BMI', min_value=0.0, max_value=1000.0, value=0.0)
+diabetespedigreefunction = st.sidebar.number_input('Diabetes Pedigree Function', min_value=0.0, max_value=1000.0, value=0.0)
 age_range = st.sidebar.selectbox('Age Range', ['0-18', '19-35', '36-50', '51-65', '66-80', '80+'])
 
 # Create a DataFrame for the input
